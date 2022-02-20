@@ -1,0 +1,66 @@
+import javax.swing.*;
+
+public class coursework2 {
+    public static void main(String[] args){
+
+        //input1name
+        String name= JOptionPane.showInputDialog("Hai besties, aku SimSima! kamu siapa?");
+        JOptionPane.showMessageDialog(null,"Hey, " +name+ " Nice to know you!");
+
+        //input2gender
+        String[] acceptableValues = {"laki-laki", "perempuan"};
+        String gender= (String)JOptionPane.showInputDialog(null, "if you don't mind, boleh kasi tau ga gender kamu apa? biar ga salah panggil nih","jenis kelamin",2,null,acceptableValues,acceptableValues[1]);
+        JOptionPane.showMessageDialog(null,"aah jadi kamu " +gender+ " ya... so ehhem, hey bubzie *wink*");
+
+        //input3yob
+        String yob= JOptionPane.showInputDialog("Kamu kelahiran tahun berapa?");
+        int yobConvert=Integer.parseInt(yob);
+        JOptionPane.showMessageDialog(null, "wih, tahun " +yob+ " udah tUa ya hehe");
+
+        //input4height
+        String height= JOptionPane.showInputDialog("Terakhir ngukur, tinggi kamu berapa deh?");
+        int heightConvert=Integer.parseInt(height);
+        JOptionPane.showMessageDialog(null, "whoah, ya 11 12 lah sama aku wkwk");
+
+        //filling
+        JOptionPane.showMessageDialog(null, "Kamu tau gasih kalo aku pinter");
+
+        //filling
+        JOptionPane.showMessageDialog(null, "dih ga percaya? yaudah ayo main tebak tebakan matematika");
+
+        //input5and6 math int
+        String number1 = JOptionPane.showInputDialog("Coba masukin 1 bilangan bulat, berapa aja terserah. BULAT. yang gak koma, tau kan?");
+        int number1c = Integer.parseInt(number1);
+        String number2 = JOptionPane.showInputDialog("nah sekarang coba masukin 1 lagi angka bilangan bulat berapa aja, terserah kamu pokoknya");
+        int number2c = Integer.parseInt(number2);
+        JOptionPane.showMessageDialog(null, "Oke sekarang aku jumlahin kedua angka tadi ya. coba kamu juga itung deh pake kalkulator juga gapapa");
+        int jumlah = number1c + number2c;
+        JOptionPane.showMessageDialog(null, "jawabannya jadi" +jumlah);
+
+        //filling
+        JOptionPane.showMessageDialog(null, "kalo hasilnya beda berarti kamu salah! soalnya aku selalu bener. BUKAN. bukan karena aku cewe tapi karena aku komputer h3h3");
+
+        //input7
+        String[] feedback = {"wow impressive", "meh", "just that?"};
+        String feedbackc =(String)JOptionPane.showInputDialog(null, "gimana gimana?","kasih tanggepan coba",3,null,feedback,feedback[1]);
+
+        //filling
+        JOptionPane.showMessageDialog(null, "ayo cobain yang lebih susah deh. siapin kalkulatormu dulu buruan 1... 2... 3...");
+
+        //input8and9 math double
+        String number11 = JOptionPane.showInputDialog("Coba sekaraang masukin 1 bilangan desimal. kalo gatau desimal, itu yang koma koma itu loh. iya pake titik komanya ya bubz");
+        double number11c = Double.parseDouble(number11);
+        String number22 = JOptionPane.showInputDialog("ngoghey sekarang masukin lagii deh 1 angka desimal terserah kamu, aku ngikut");
+        double number22c = Double.parseDouble(number22);
+        JOptionPane.showMessageDialog(null,"kedua angka tadi aku kaliin ya! kamu itung juga deh");
+        double times = number11c * number22c;
+        JOptionPane.showMessageDialog(null, "pasti jawabannya jadi" +times);
+
+        //input10
+        String[] feedback2 = {"oke percaya", "yaudah iya"};
+        String feedback2c =(String)JOptionPane.showInputDialog(null, "sekarang udah percaya kan kalo aku pinter?", "kan udah aku kasi bukti",2,null,feedback2,feedback2[1]);
+
+        //filling
+        JOptionPane.showMessageDialog(null, "oke sampai sini dulu ya tebak tebakannya! capek, mau bobo siang. Bubyeee<3");
+    }
+}
